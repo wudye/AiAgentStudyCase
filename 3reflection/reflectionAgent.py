@@ -47,21 +47,21 @@ REFINE_PROMPT_TEMPLATE = """
 """
 
 
-# 假设 llm_client.py 和 memory.py 已定义
-# from llm_client import HelloAgentsLLM
-# from memory import Memory
-    """
-    初始化问题解决器实例
+    # 假设 llm_client.py 和 memory.py 已定义
+    # from llm_client import HelloAgentsLLM
+    # from memory import Memory
+"""
+初始化问题解决器实例
+
+Args:
+    llm_client: 用于与LLM交互的客户端对象
+    max_iterations (int, optional): 最大迭代次数，默认为3
     
-    Args:
-        llm_client: 用于与LLM交互的客户端对象
-        max_iterations (int, optional): 最大迭代次数，默认为3
-        
-    Attributes:
-        llm_client: 存储LLM客户端实例
-        max_iterations: 存储最大迭代次数
-        memory: 初始化一个空的内存存储实例
-    """
+Attributes:
+    llm_client: 存储LLM客户端实例
+    max_iterations: 存储最大迭代次数
+    memory: 初始化一个空的内存存储实例
+"""
 
 class ReflectionAgent:
     def __init__(self, llm_client, max_iterations=3):
